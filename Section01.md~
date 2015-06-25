@@ -39,7 +39,7 @@ http://ftp.nara.wide.ad.jp/pub/Linux/centos/7/isos/x86_64/CentOS-7-x86_64-Minima
 
 または、
 
-　　　　ssh ユーザー名@CentOSのIPアドレス
+　　　　ssh CentOSのユーザー名@CentOSのIPアドレス
 
 で、CentOSに入れたら成功。
 
