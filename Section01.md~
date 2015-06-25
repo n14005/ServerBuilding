@@ -85,21 +85,23 @@ wgetが入ってないと思うので、
 
 ## 9 Worpressを動かす
 
-- LAMP環境を作る
+LAMP環境を作る
 
-　　　　yum -y install php-mysql php php-gd php-mbstring
-　　　　yum -y install httpd
+    yum -y install php-mysql php php-gd php-mbstring
+    yum -y install httpd
     yum -y install mariadb mariadb-server
 
 をインストール。
 
-###　Apacheの設定
+Apacheの設定
 
-　　　　systemctl start httpd
-	↑　httpd起動
+    systemctl start httpd
 
-　　　　systemctl enable httpd　
-	↑　httpd自動起動設定
+↑　httpd起動
+
+    systemctl enable httpd　
+
+↑　httpd自動起動設定
 
 
 ### MySQLの設定

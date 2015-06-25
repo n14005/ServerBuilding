@@ -85,21 +85,23 @@ wgetが入ってないと思うので、
 
 ## 9 Worpressを動かす
 
-- LAMP環境を作る
+LAMP環境を作る
 
-　　　　yum -y install php-mysql php php-gd php-mbstring
-　　　　yum -y install httpd
+    yum -y install php-mysql php php-gd php-mbstring
+    yum -y install httpd
     yum -y install mariadb mariadb-server
 
 をインストール。
 
-###　Apacheの設定
+Apacheの設定
 
-　　　　systemctl start httpd
-	↑　httpd起動
+    systemctl start httpd
 
-　　　　systemctl enable httpd　
-	↑　httpd自動起動設定
+↑　httpd起動
+
+    systemctl enable httpd　
+
+↑　httpd自動起動設定
 
 
 ### MySQLの設定
@@ -119,17 +121,20 @@ mariadbデーモンの登録状態を確認します。
     systemctl list-unit-files |grep mariadb
 
 enableになっていたらOK。
-my
-- Marinadbの設定
+
+Marinadbの設定
 
 　　　　mysql -u root -p
-	↑ルートでMarinadbへログイン
 
-　　　　create databese データベース名
-	↑任意の名前のデータベースを作成
+↑ルートでMarinadbへログイン
+
+    create databese データベース名
+
+↑任意の名前のデータベースを作成
 
     grant all privileges on データベース名.* to ユーザー名@localhost identified by 'パスワード';
-	↑データベース名と、任意のユーザー名・パスワードを入力
+
+↑データベース名と、任意のユーザー名・パスワードを入力
 
 ### Wordpressのインストール
 
