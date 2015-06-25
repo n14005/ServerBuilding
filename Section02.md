@@ -233,7 +233,7 @@ mariadb のデーモン（サービス）が起動しているか確認します
 
 　　　　systemctl enable mariadb.service
 
-##rootのパスワード設定
+##　rootのパスワード設定
 
      mysql_secure_installation
 
