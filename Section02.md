@@ -99,8 +99,8 @@ nginx+PHP+MarinaDB
 
 を
 
-　　　　;pm = dynamic
-　　　　pm = static
+    ;pm = dynamic
+    pm = static
 
 に直す。
 
@@ -159,8 +159,8 @@ nginx+PHP+MarinaDB
 
 
 ### NginxでPHPを動かすための設定
-e	
-    vim /etc/nginx/conf.d/default.conf
+
+　　　　vim /etc/nginx/conf.d/default.conf
 
 で、
 
@@ -227,7 +227,7 @@ mariadb のデーモン（サービス）を起動します。
 
 mariadb のデーモン（サービス）が起動しているか確認します。
 
-	systemctl list-units |grep mariadb
+　　　　systemctl list-units |grep mariadb
 
 次に、mariadbデーモンがブート時に自動起動するように設定しておきます。
 
