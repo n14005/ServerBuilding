@@ -124,7 +124,7 @@ enableになっていたらOK。
 
 Marinadbの設定
 
-　　　　mysql -u root -p
+    mysql -u root -p
 
 ↑ルートでMarinadbへログイン
 
@@ -140,35 +140,44 @@ Marinadbの設定
 
 [ここ](http://ufuso.jp/wp/?p=15315)確認しながらやって
 
-　　　　yum -y install php-mysql
-	↑何かわからないけどインストール
+    yum -y install php-mysql
+
+↑何かわからないけどインストール
 
 ここからWordpress
 
     wget http://ja.wordpress.org/wordpress-3.9.1-ja.tar.gz
-	↑Wordpressインストール
+
+↑Wordpressインストール
 
 　　　　tar zxvf wordpress-3.9.1-ja.tar.gz
-	↑Wordpress解凍
+
+↑Wordpress解凍
 
 　　　　mv wordpress/ /var/www/html/データベース名　
-	↑WordPress解凍先ディレクトリを/var/www/html/データベース名　ディレクトリ下へ移動（データベース名はmariadbの奴）
-かわからないけどインストール
+
+↑WordPress解凍先ディレクトリを/var/www/html/データベース名　ディレクトリ下へ移動（データベース名はmariadbの奴）
+
 
     chmod 777 /var/www/html/データベース名　
-	↑WordPressディレクトリを一時的に書込可にする
+
+↑WordPressディレクトリを一時的に書込可にする
 
 　　　　chown -R 任意のユーザー名:apache /var/www/html/wpress/
-	↑　WordPressディレクトリとその中の全ファイルの所有者を任意のユーザー名、グループをApache実行ユーザへ変更（「apache:apache」も可）
+
+↑　WordPressディレクトリとその中の全ファイルの所有者を任意のユーザー名、グループをApache実行ユーザへ変更（「apache:apache」も可）
 
 　　　　mkdir /var/www/html/データベース名/wp-content/uploads　
-	↑　uploadsフォルダの作成
+
+↑　uploadsフォルダの作成
 
 　　　　mkdir /var/www/html/データベース名/wp-content/upgrade　
-	↑　upgradeフォルダの作成
+
+↑　upgradeフォルダの作成
 
 　　　　chmod -R 777 /var/www/html/wpress/wp-content　
-	↑wp-contentフォルダとその中の全ファイルに読み書き権限の設定
+
+↑wp-contentフォルダとその中の全ファイルに読み書き権限の設定
 
 　
 ###SELinuxの設定

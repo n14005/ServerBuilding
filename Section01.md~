@@ -121,32 +121,38 @@ mariadbデーモンの登録状態を確認します。
     systemctl list-unit-files |grep mariadb
 
 enableになっていたらOK。
-my
-- Marinadbの設定
 
-　　　　mysql -u root -p
-	↑ルートでMarinadbへログイン
+Marinadbの設定
 
-　　　　create databese データベース名
-	↑任意の名前のデータベースを作成
+    mysql -u root -p
+
+↑ルートでMarinadbへログイン
+
+    create databese データベース名
+
+↑任意の名前のデータベースを作成
 
     grant all privileges on データベース名.* to ユーザー名@localhost identified by 'パスワード';
-	↑データベース名と、任意のユーザー名・パスワードを入力
+
+↑データベース名と、任意のユーザー名・パスワードを入力
 
 ### Wordpressのインストール
 
 [ここ](http://ufuso.jp/wp/?p=15315)確認しながらやって
 
-　　　　yum -y install php-mysql
-	↑何かわからないけどインストール
+    yum -y install php-mysql
+
+↑何かわからないけどインストール
 
 ここからWordpress
 
     wget http://ja.wordpress.org/wordpress-3.9.1-ja.tar.gz
-	↑Wordpressインストール
+
+↑Wordpressインストール
 
 　　　　tar zxvf wordpress-3.9.1-ja.tar.gz
-	↑Wordpress解凍
+
+↑Wordpress解凍
 
 　　　　mv wordpress/ /var/www/html/データベース名　
 	↑WordPress解凍先ディレクトリを/var/www/html/データベース名　ディレクトリ下へ移動（データベース名はmariadbの奴）
