@@ -184,17 +184,17 @@ Marinadbの設定
 
 [ここ](http://ufuso.jp/wp/?p=15315)確認しながらやって
 
-　　　　setsebool -P httpd_can_network_connect_db 1
+    setsebool -P httpd_can_network_connect_db 1
 
-　　　　setsebool -P httpd_dbus_avahi 1
+    setsebool -P httpd_dbus_avahi 1
 
-　　　　setsebool -P httpd_tty_comm 1
+    setsebool -P httpd_tty_comm 1
 
-　　　　setsebool -P httpd_unified 1
+    setsebool -P httpd_unified 1
 
-　　　　yum provides *bin/semanage
+    yum provides *bin/semanage
 
-　　　　yum -y install policycoreutils-python
+    yum -y install policycoreutils-python
 
     semanage fcontext -a -t httpd_sys_content_t "/var/www/html/データベース名(/.*)?"
 

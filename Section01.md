@@ -204,9 +204,9 @@ Marinadbの設定
 
     restorecon -R -v /var/www/html/データベース名/wp-content
 
-　　　　setsebool -P allow_ftpd_full_access 1
+    setsebool -P allow_ftpd_full_access 1
 
-　　　　systemctl restart httpd
+    systemctl restart httpd
 
 ###ファイアーウォール止める
 
