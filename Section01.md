@@ -33,7 +33,7 @@ http://ftp.nara.wide.ad.jp/pub/Linux/centos/7/isos/x86_64/CentOS-7-x86_64-Minima
 ## 6 SSH接続確認
 
 
-- Ubuntuのターミナルから、
+Ubuntuのターミナルから、
 
     ssh CentOSのIPアドレス
 
@@ -45,7 +45,7 @@ http://ftp.nara.wide.ad.jp/pub/Linux/centos/7/isos/x86_64/CentOS-7-x86_64-Minima
 
 ## 7 インストール後の設定
 
-- CentOSのyum,wgetのプロキシ設定。
+CentOSのyum,wgetのプロキシ設定。
 
     sudo vi /etc/yum.conf
 

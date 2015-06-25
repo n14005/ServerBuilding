@@ -35,7 +35,7 @@ http://ftp.nara.wide.ad.jp/pub/Linux/centos/7/isos/x86_64/CentOS-7-x86_64-Minima
 
 - Ubuntuのターミナルから、
 
-　　　　ssh CentOSのIPアドレス
+    ssh CentOSのIPアドレス
 
 または、
 
@@ -49,7 +49,9 @@ http://ftp.nara.wide.ad.jp/pub/Linux/centos/7/isos/x86_64/CentOS-7-x86_64-Minima
 
     sudo vi /etc/yum.conf
 
-、でproxy=http://172.16.40.1:8888/を適当な場所に記述する。
+、でproxy=http://172.16.40.1:8888/
+
+を適当な場所に記述する。
 
 wgetが入ってないと思うので、
 
