@@ -233,7 +233,7 @@ mariadb のデーモン（サービス）が起動しているか確認します
 
     systemctl enable mariadb.service
 
-##　rootのパスワード設定
+# rootのパスワード設定
 
      mysql_secure_installation
 
@@ -272,7 +272,7 @@ mariadb のデーモン（サービス）が起動しているか確認します
 
 #前準備
 
- yum -y install wget gcc openssl openssl-devel
+    yum -y install wget gcc openssl openssl-devel
 
 # Apache HTTP Server 2.2をダウンロード
 
@@ -292,26 +292,30 @@ mariadb のデーモン（サービス）が起動しているか確認します
 
     make install
 
-　　　　/usr/local/apache/bin/apachectl start
+    /usr/local/apache/bin/apachectl start
 
 順番にやる。
 
 Apacheが起動したか確認
 
-　　　　ps aux | grep httpd
+    ps aux | grep httpd
 
 
 ## php5.5をダウンロードs
 
 # 前準備
+
     yum -y install libxml2-devel
 
-# ソースをとってくる
+# ソースを取ってくる
+
+　　　　wget http://jp2.php.net/get/php-5.5.26.tar.gz/from/this/mirror
+
 
 # 展開　インストール
-    sudo tar zxvf php-5.5.25.tar.gz
+    sudo tar zxvf php-5.5.26.tar.gz
 
-    cd php-5.5.25
+    cd php-5.5.26
 
     sudo ./configure ./configure --with-apxs2=/usr/local/apache2/bin/apxs \
             --enable-mbstring \            
@@ -345,17 +349,19 @@ ServerName n14005:80
     SetHandler application/x-httpd-php
 </FilesMatch>
 
-をhttpd.confに追記
+を
 
- DirectoryIndexと書いてある行にindex.phpを追記
+httpd.confに追記
 
-　php.ini(usr/local/lib/php.ini)に
+DirectoryIndexと書いてある行にindex.phpを追記
 
-   mysql.default_socket =
+php.ini(usr/local/lib/php.ini)に
+
+    mysql.default_socket =
 
 という行があるので、
 
-　　　mysql.default_socket = /var/lib/mysql/mysql.sock
+    mysql.default_socket = /var/lib/mysql/mysql.sock
 
 を追記。
 
@@ -363,7 +369,7 @@ ServerName n14005:80
 
 abコマンドをとる
 
-　　　　sudo apt-get install apache2-utils
+    sudo apt-get install apache2-utils
 
 ベンチマークを取る
 
