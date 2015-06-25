@@ -26,7 +26,7 @@ http://ftp.nara.wide.ad.jp/pub/Linux/centos/7/isos/x86_64/CentOS-7-x86_64-Minima
 
 という、行があるので
 
-    ONBOOT=yes
+　　　　ONBOOT=yes
 
 に書き換えて、保存する。
 
