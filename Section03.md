@@ -19,7 +19,7 @@ sshpassインストール
 
 # proxyの設定と何かダウンロード
 
-　　　　vagrant plugin install vagrant-proxyconf
+    vagrant plugin install vagrant-proxyconf
     vagrant plugin install vagrant-vbguest
 
 Vagrantfileにproxy設定を書く
