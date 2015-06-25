@@ -43,9 +43,7 @@ http://ftp.nara.wide.ad.jp/pub/Linux/centos/7/isos/x86_64/CentOS-7-x86_64-Minima
 
 で、CentOSに入れたら成功。
 
-
-
-##　7 インストール後の設定
+## 7 インストール後の設定
 
 - CentOSのyum,wgetのプロキシ設定。
 
