@@ -35,7 +35,7 @@ http://ftp.nara.wide.ad.jp/pub/Linux/centos/7/isos/x86_64/CentOS-7-x86_64-Minima
 
 - Ubuntuのターミナルから、
 
-    ssh CentOSのIPアドレス
+　　　　ssh CentOSのIPアドレス
 
 または、
 
