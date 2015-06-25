@@ -82,11 +82,13 @@ nginx+PHP+MarinaDB
 
     sudo vi /etc/php-fpm.d/www.conf
 
-で、
+で
+
     user = apache
     group = apache
 
 を
+    
     user = nginx
     group = nginx
 
