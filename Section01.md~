@@ -22,7 +22,7 @@ http://ftp.nara.wide.ad.jp/pub/Linux/centos/7/isos/x86_64/CentOS-7-x86_64-Minima
 
 - CentOSの中に、/etc/sysconfig/network-scriptにifcfg-enp0s?というファイルがあるのでそれを開く。
 
-    ONBOOT=no	
+　　　　ONBOOT=no
 
 という、行があるので
 
