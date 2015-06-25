@@ -20,7 +20,7 @@ http://ftp.nara.wide.ad.jp/pub/Linux/centos/7/isos/x86_64/CentOS-7-x86_64-Minima
 
 ## 5 ネットワークアダプター1/2へのIPアドレスの設定
 
-- CentOSの中に、/etc/sysconfig/network-scriptにifcfg-enp0s?というファイルがあるのでそれを開く。
+CentOSの中に、/etc/sysconfig/network-scriptにifcfg-enp0s?というファイルがあるのでそれを開く。
 
 　　　　ONBOOT=no
 
@@ -63,9 +63,9 @@ wgetが入ってないと思うので、
 
 で、
 
-#http_proxy=http://IPアドレス：ポート番号/
-#https_proxy=http://IPアドレス：ポート番号/
-#ftp_proxy=http://IPアドレス：ポート番号/
+    http_proxy=http://IPアドレス：ポート番号/
+    https_proxy=http://IPアドレス：ポート番号/
+    ftp_proxy=http://IPアドレス：ポート番号/
 
 この三行を、
 
