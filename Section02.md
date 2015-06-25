@@ -227,11 +227,11 @@ mariadb のデーモン（サービス）を起動します。
 
 mariadb のデーモン（サービス）が起動しているか確認します。
 
-　　　　systemctl list-units |grep mariadb
+    systemctl list-units |grep mariadb
 
 次に、mariadbデーモンがブート時に自動起動するように設定しておきます。
 
-　　　　systemctl enable mariadb.service
+    systemctl enable mariadb.service
 
 ##　rootのパスワード設定
 
