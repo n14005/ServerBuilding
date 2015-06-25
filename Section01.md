@@ -69,9 +69,9 @@ wgetが入ってないと思うので、
 
 この三行を、
 
-https_proxy = http://172.16.40.1:8888/
-http_proxy = http://172.16.40.1:8888/
-ftp_proxy = http://172.16.40.1:8888/
+    https_proxy = http://172.16.40.1:8888/
+    http_proxy = http://172.16.40.1:8888/
+    ftp_proxy = http://172.16.40.1:8888/
 
 に直す。終わり。
 

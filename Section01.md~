@@ -63,15 +63,15 @@ wgetが入ってないと思うので、
 
 で、
 
-#http_proxy=http://IPアドレス：ポート番号/
-#https_proxy=http://IPアドレス：ポート番号/
-#ftp_proxy=http://IPアドレス：ポート番号/
+    http_proxy=http://IPアドレス：ポート番号/
+    https_proxy=http://IPアドレス：ポート番号/
+    ftp_proxy=http://IPアドレス：ポート番号/
 
 この三行を、
 
-https_proxy = http://172.16.40.1:8888/
-http_proxy = http://172.16.40.1:8888/
-ftp_proxy = http://172.16.40.1:8888/
+    https_proxy = http://172.16.40.1:8888/
+    http_proxy = http://172.16.40.1:8888/
+    ftp_proxy = http://172.16.40.1:8888/
 
 に直す。終わり。
 
