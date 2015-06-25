@@ -82,21 +82,26 @@ nginx+PHP+MarinaDB
 
     sudo vi /etc/php-fpm.d/www.conf
 
-で、
+で
+
     user = apache
     group = apache
 
 を
+    
     user = nginx
     group = nginx
 
 に直す。
 さらに、
 
-　　　　pm = dynamic
+    pm = dynamic
+
 を
-    ;pm = dynamic
-    pm = static
+
+　　　　;pm = dynamic
+　　　　pm = static
+
 に直す。
 
 # php-fpmデーモン起動
@@ -114,7 +119,7 @@ nginx+PHP+MarinaDB
 
 ## nginxインストール
 
-　　　　rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+    rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
 
 でリポジトリの追加。
 
@@ -129,7 +134,9 @@ nginx+PHP+MarinaDB
 で
 
     user nginx;
+
 を
+
     user nginx nginx;
 
 に書き換える。

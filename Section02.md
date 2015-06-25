@@ -95,10 +95,13 @@ nginx+PHP+MarinaDB
 に直す。
 さらに、
 
-　　　　pm = dynamic
+    pm = dynamic
+
 を
-    ;pm = dynamic
-    pm = static
+
+　　　　;pm = dynamic
+　　　　pm = static
+
 に直す。
 
 # php-fpmデーモン起動
@@ -116,7 +119,7 @@ nginx+PHP+MarinaDB
 
 ## nginxインストール
 
-　　　　rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+    rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
 
 でリポジトリの追加。
 
@@ -131,29 +134,31 @@ nginx+PHP+MarinaDB
 で
 
     user nginx;
+
 を
+
     user nginx nginx;
 
 に書き換える。
 
-# ウェブサーバー(nginx) を起動します。
+### ウェブサーバー(nginx) を起動します。
 
     systemctl start nginx.service
 
-# ウェブサーバー(nginx) のデーモン（サービス）が起動しているか確認します。
+### ウェブサーバー(nginx) のデーモン（サービス）が起動しているか確認します。
 
     systemctl list-units |grep nginx
 
-# 次に、ウェブサーバー(nginx)デーモンがブート時に自動起動するように設定しておきます。
+### 次に、ウェブサーバー(nginx)デーモンがブート時に自動起動するように設定しておきます。
 
     systemctl enable nginx.service
 
-# ウェブサーバー(nginx)デーモンの登録状態を確認します。php
+### ウェブサーバー(nginx)デーモンの登録状態を確認します。php
 
     systemctl list-unit-files |grep ngin
 
 
-# NginxでPHPを動かすための設定
+### NginxでPHPを動かすための設定
 e	
     vim /etc/nginx/conf.d/default.conf
 
